@@ -1,10 +1,10 @@
-function getJSON(file, callback) {
+function getJSON(file, callbackFunction) {
     var f = new XMLHttpRequest();
     f.overrideMimeType("application/json");
     f.open("GET", file, true);
     f.onreadystatechange = function() {
         if (f.readyState === 4 && f.status == "200") {
-            callback(f.responseText);
+            callbackFunction(f.responseText);
         }
     }
     f.send(null);
@@ -13,11 +13,12 @@ function getJSON(file, callback) {
 getJSON("https://siddhantbagga15.github.io/json_data/data.json", function(json) {
 
     var data = JSON.parse(json);
-    var cardRowWrapper = document.querySelector('.row_wrapper');
     var section2 = data.section2;
     var section3 = data.section3;
     var section3Texts = section3.text;
     var section4Components = data.section4;
+
+    var cardRowWrapper = document.querySelector('.row_wrapper');
 
     section2.forEach(i => {
         var imgPath = i.image;
