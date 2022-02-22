@@ -17,6 +17,7 @@ getJSON("https://siddhantbagga15.github.io/json_data/data.json", function (json)
     var section3 = data.section3;
     var section3Texts = section3.text;
     var section4Components = data.section4;
+    var imagePathPrefix = "https://siddhantbagga15.github.io/hw1_images/"
 
     var cardRowWrapper = document.querySelector('.row_wrapper');
 
@@ -26,7 +27,7 @@ getJSON("https://siddhantbagga15.github.io/json_data/data.json", function (json)
         var img = document.createElement('img');
         var heading = i.heading;
         img.classList.add("card_image");
-        img.src = imgPath;
+        img.src = imagePathPrefix + imgPath;
         var paragraph = document.createElement('p');
         paragraph.classList.add("card_paragraph")
         paragraph.textContent = text;
