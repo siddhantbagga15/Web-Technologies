@@ -9,7 +9,10 @@ body {
 }
 
 #top_line {
+    background-color: rgb(216, 65, 65);
     color: rgb(216, 65, 65);
+    height: 1.2px;
+    border: none;
     position: sticky;
     top: 0px;
     z-index: 100;
