@@ -10,14 +10,14 @@ function getJSON(file, callbackFunction) {
     f.send(null);
 }
 
-getJSON("https://siddhantbagga15.github.io/json_data/data.json", function (json) {
+getJSON("https://siddhantbagga15.github.io/hw1_data/data.json", function (json) {
 
     var data = JSON.parse(json);
     var section2 = data.section2;
     var section3 = data.section3;
     var section3Texts = section3.text;
     var section4Components = data.section4;
-    var imagePathPrefix = "https://siddhantbagga15.github.io/hw1_images/"
+    var imagePathPrefix = "https://siddhantbagga15.github.io/hw1_data/hw1_images/"
 
     var cardRowWrapper = document.querySelector('.row_wrapper');
 
