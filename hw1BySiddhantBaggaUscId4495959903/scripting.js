@@ -2,7 +2,7 @@ function getJSON(file, callbackFunction) {
     var f = new XMLHttpRequest();
     f.overrideMimeType("application/json");
     f.open("GET", file, true);
-    f.onreadystatechange = function() {
+    f.onreadystatechange = function () {
         if (f.readyState === 4 && f.status == "200") {
             callbackFunction(f.responseText);
         }
@@ -10,7 +10,7 @@ function getJSON(file, callbackFunction) {
     f.send(null);
 }
 
-getJSON("https://siddhantbagga15.github.io/json_data/data.json", function(json) {
+getJSON("https://siddhantbagga15.github.io/json_data/data.json", function (json) {
 
     var data = JSON.parse(json);
     var section2 = data.section2;
@@ -64,7 +64,7 @@ getJSON("https://siddhantbagga15.github.io/json_data/data.json", function(json) 
         title.textContent = k.heading;
         var text = document.createElement('p');
         text.textContent = k.text;
-        if(idx % 2 == 0 ) {
+        if (idx % 2 == 0) {
             div2.classList.add('section4_left_image_wrapper');
             div3.classList.add('section4_right_paragraph_wrapper');
             image.classList.add("section4_image");
@@ -76,7 +76,7 @@ getJSON("https://siddhantbagga15.github.io/json_data/data.json", function(json) 
             div3.classList.add('section4_left_paragraph_wrapper');
             image.classList.add("section4_image");
             title.classList.add("section4_heading_right");
-            text.classList.add("section4_text"); 
+            text.classList.add("section4_text");
         }
         div2.appendChild(image);
         div3.appendChild(title);
