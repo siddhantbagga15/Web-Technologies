@@ -399,13 +399,13 @@ body {
     font-size: 22px;
 }
 
-/* #page_not_found_footer {
+#page_not_found_footer {
     position: relative;
     bottom: 0;
     width: 100%;
     height: auto;
     margin-top: 150px;
-} */
+}
 
 .footer_link:hover {
     text-decoration: underline;
