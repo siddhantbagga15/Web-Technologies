@@ -150,7 +150,6 @@ body {
 #last_section_text_wrapper {
     position: relative;
     text-align: center;
-
     top: 50%;
     transform: translateY(-50%);
 }
