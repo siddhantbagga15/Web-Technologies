@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title>Homework 2 by Siddhant Bagga (USC-ID: 4495959903)</title>
+  <link rel = "stylesheet" href = "styles.css">
+  <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Comfortaa">
+  <script src = "scripting.js"></script>
+</head>
+
+<body>
+    <div id = "wrapper">
+    <div id = "section1">
+        <h1 id = "heading"> Blood Pressure Predictor </h1>
+        <p id = "subheading"> Fill out the form to get your Blood Pressure estimate!</p>
+    </div>
+
+    <div id = "form" method = "POST">
+        <form>
+            <div id = "ageField">
+                <label id = "ageLabel" for = "age" class = "required-field">Age</label> <input id = "ageInput" type = "number" id = "age" name = "age" placeholder = "Enter age in years">
+            </div>
+            <div id = "weightField">
+                <label id = "weightLabel" for = "weight" class = "required-field">Weight</label> <input id = "weightInput" type = "number" id = "weight" name = "weight" placeholder = "Enter weight in kg">
+            </div>
+            <!-- <div id = "submitButtonWrapper"> -->
+                <input id = "submitButton" type = "button" value = "Calculate"  onclick='processData()'>
+            <!-- </div>  -->
+        </form>
+    </div>
+
+    <div id = result>
+
+    </div>
+</div>
+    
+
+
+</body>
+
+</html>
