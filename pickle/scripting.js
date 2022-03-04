@@ -1,4 +1,4 @@
-const backendUrl = "http://siddhantbagga.pythonanywhere.com/";
+const backendUrl = "https://siddhantbagga.pythonanywhere.com/";
 
 async function processData() {
     console.log("HI");
