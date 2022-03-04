@@ -13,7 +13,8 @@ async function processData() {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
         },
         body: JSON.stringify(data) // body data type must match "Content-Type" header
       });
