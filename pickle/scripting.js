@@ -1,4 +1,4 @@
-const backendUrl = "https://siddhantbagga.pythonanywhere.com/";
+const backendUrl = "http://siddhantbagga.pythonanywhere.com/";
 
 async function processData() {
     console.log("HI");
@@ -8,17 +8,23 @@ async function processData() {
         age: age, 
         weight: weight
     }
-    
+
+    var dj = (JSON.stringify(data));
     const response = await fetch(backendUrl, {
-        method: 'POST', // *GET, POST, PUT, DELETE, etc.
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': "https://siddhantbagga.pythonanywhere.com/"
-        },
-        body: JSON.stringify(data) // body data type must match "Content-Type" header
+        method: 'POST',
+        // headers: headers,
+        // mode: 'cors',
+        body: dj // body data type must match "Content-Type" header
       });
-    console.log("HERE!!!!");
-    console.log(response);
+    // fetch(backendUrl)
+    // .then(res => console.log(res))
+    var res = await response.text();
+    console.log("HERE!!!!", res);
+    //console.log(response);
+
+    var c = document.getElementById('finalResult')
+    c.textContent = res;
+    // c.appendChild(d);
+
 
 }
