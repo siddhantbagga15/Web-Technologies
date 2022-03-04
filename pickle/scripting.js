@@ -14,7 +14,7 @@ async function processData() {
         mode: 'cors',
         headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': "https://siddhantbagga.pythonanywhere.com/"
         },
         body: JSON.stringify(data) // body data type must match "Content-Type" header
       });
