@@ -20,11 +20,11 @@
         <table style = "margin-left: auto; margin-right: auto">
           <tr>
             <td align = "right" class = "requiredField inputLabel">Age</td>
-            <td><input type = "number" name = "age" placeholder = "Enter age in years" required/></td>
+            <td><input type = "number" name = "age" placeholder = "Enter age in years" required min = 0 max = 200/></td>
           </tr>
           <tr style = "margin-top: 1%">
             <td align = "right" class = "requiredField inputLabel">Weight</td>
-            <td><input type = "number" name = "weight" placeholder = "Enter weight in kg" required/></td>
+            <td><input type = "number" name = "weight" placeholder = "Enter weight in kg" required min = 0 max = 1000/></td>
           </tr>
         </table>
         <input id = "submitButton" type = "submit" value = "Calculate">
