@@ -1,0 +1,73 @@
+
+#submitButton {
+    height: 35px;
+    width: 120px;
+    font-size: 18px;
+    background-color: #4e6aa5;
+    color: white;
+    margin-top: 2%;
+    margin-left: 35px;
+    font-weight: bold;
+    border: hidden;
+}
+
+#form {
+    margin-top: 2%;
+}
+
+#heading {
+    color: #8a0000;
+    font-size: 35px;
+}
+
+#subheading {
+    color: #9c292a;
+    font-size: 25px;
+}
+
+
+#wrapper {
+    margin-top: 80px;
+    /* margin-left: 200px; */
+    text-align: center;
+    width: 1430px;
+}
+
+#ageLabel {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#weightLabel {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.requiredField::after {
+    content: " *";
+    color: #fd1116;
+}
+
+td {
+    padding: 5px;
+    padding-top: 4%;
+}
+
+.inputLabel {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+input:focus {
+	outline: none;
+  	border: 2px solid gray;
+}
+
+#finalResult {
+    margin-left: 45px;
+}
+
+#result {
+    margin-top: 2%;
+}
+

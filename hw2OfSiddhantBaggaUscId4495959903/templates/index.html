@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <title>Homework 2 by Siddhant Bagga (USC-ID: 4495959903)</title>
+  <link rel = "stylesheet" type= "text/css" href = "{{ url_for('static', filename = 'styles.css') }}">
+</head>
+
+<body>
+    <div id = "wrapper">
+    <div id = "section1">
+        <h1 id = "heading"> Blood Pressure Predictor </h1>
+        <p id = "subheading"> Fill out the form to get your Blood Pressure estimate!</p>
+    </div>
+
+    <div id = "form">
+      <form method = "POST">
+        <table style = "margin-left: auto; margin-right: auto">
+          <tr>
+            <td align = "right" class = "requiredField inputLabel">Age</td>
+            <td><input type = "number" name = "age" placeholder = "Enter age in years" required/></td>
+          </tr>
+          <tr style = "margin-top: 1%">
+            <td align = "right" class = "requiredField inputLabel">Weight</td>
+            <td><input type = "number" name = "weight" placeholder = "Enter weight in kg" required/></td>
+          </tr>
+        </table>
+        <input id = "submitButton" type = "submit" value = "Calculate">
+      </form>
+
+  </div>
+
+  <div id = "result">
+    <h4 id = "finalResult"> {{ bpValue }} </h4>
+  </div>
+
+
+</div>
+    
+
+
+</body>
+
+</html>
