@@ -1,3 +1,7 @@
+body {
+    font-family: "Times New Roman";
+    width: 1430px;
+}
 
 #submitButton {
     height: 35px;
@@ -28,9 +32,7 @@
 
 #wrapper {
     margin-top: 80px;
-    /* margin-left: 200px; */
     text-align: center;
-    width: 1430px;
 }
 
 #ageLabel {
@@ -43,7 +45,7 @@
     font-weight: bold;
 }
 
-.requiredField::after {
+.requiredInput:after {
     content: " *";
     color: #fd1116;
 }
@@ -59,8 +61,8 @@ td {
 }
 
 input:focus {
-	outline: none;
-  	border: 2px solid gray;
+    outline: none;
+    border: 2px solid gray;
 }
 
 #finalResult {
@@ -71,3 +73,7 @@ input:focus {
     margin-top: 2%;
 }
 
+input {
+    width: 180px;
+    height: 25px;
+}
